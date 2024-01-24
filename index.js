@@ -14,7 +14,7 @@ app.use(cors({
   // origin = 請求的來源
   // callback(錯誤, 是否允許)
   origin (origin, callback) {
-    if (origin === undefined || origin.includes('github.io') || origin.includes('localhost')) {
+    if (origin === undefined || origin.includes('rechilab.com') || origin.includes('localhost')) {
       callback(null, true)
     } else {
       callback(new Error('CORS'), false)
